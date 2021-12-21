@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Simple Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Satisfaction Survey Form</h1>
+    <p id="description">Survey to find out the satisfaction level of <a href="https://indranw.herokuapp.com/"
+            target="_blank">my portfolio website</a></p>
+    <form id="survey-form" method="GET" action="">
+        <div class="left-side">
+            <label id="name-label" for="name">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your full name here" required>
+        </div>
+        <div class="">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email here" required>
+        </div>
+        <div class="">
+            <label id="number-label" for="number">Age</label>
+            <input type="number" name="age" id="number" min="13" max="100" placeholder="ex 21">
+        </div>
+        <div class="">
+            <div class="">
+                <label class="" for="currentJob">Job Level</label>
+                <select id="dropdown" name="currentJob" class="">
+                    <option disabled value>Select an option</option>
+                    <option value="student">Student</option>
+                    <option value="owner">Executive/Business Owner</option>
+                    <option value="manager">Manager</option>
+                    <option value="retired">Retired</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="">
+            <label class="" for="devices">Which device you use to see the portfolio website?<br>(Check all that
+                apply)</label>
+            <ul style="list-style: none;" id="devices">
+                <li class="checkbox"><input name="prefer" value="1" type="checkbox" class="userRatings">Windows/Linux
+                </li>
+                <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Android</li>
+                <li class="checkbox"><input name="prefer" value="3" type="checkbox" class="userRatings">MacOS</li>
+                <li class="checkbox"><input name="prefer" value="4" type="checkbox" class="userRatings">iOS</li>
+            </ul>
+        </div>
+        <div class="">
+            <label class="" for="rating">Overall, how good my portfolio web?</label>
+            <ul style="list-style: none;">
+                <li class="radio"><label>Very Good<input name="radio-buttons" value="1" type="radio"
+                            class="userRatings"></label></li>
+                <li class="radio"><label>Good<input name="radio-buttons" value="2" type="radio"
+                            class="userRatings"></label>
+                </li>
+                <li class="radio"><label>Not Bad<input name="radio-buttons" value="3" type="radio"
+                            class="userRatings"></label></li>
+                <li class="radio"><label>Bad<input name="radio-buttons" value="4" type="radio"
+                            class="userRatings"></label>
+                </li>
+                <li class="radio"><label>Very Bad<input name="radio-buttons" value="5" type="radio"
+                            class="userRatings"></label></li>
+            </ul>
+        </div>
+        <div class="">
+            <label class="" for="comments">What parts must be improved for the portfolio web?</label>
+            <br>
+            <textarea id="comments" class="" style="height:50px;resize:vertical;" name="comment"
+                placeholder="Enter your suggestion here..."></textarea>
+        </div>
+        <div class="">
+            <button id="submit" type="submit">Submit</button>
+        </div>
+    </form>
+    <script type="text/javascript" src="js/script.js">
+    </script>
+</body>
+
+</html>
