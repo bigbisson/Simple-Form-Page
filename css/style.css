@@ -7,12 +7,10 @@ body {
     min-width: 320px;
 }
 
-h1 {
-    font-size: 2em;
-    font-weight: bold;
-    margin: 20px;
-    color: white;
-    text-align: center;
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 p {
@@ -26,6 +24,13 @@ a {
 
 #description {
     font-weight: bold;
+    color: white;
+}
+
+#title {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px;
     color: white;
 }
 
